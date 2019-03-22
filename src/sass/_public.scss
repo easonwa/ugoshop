@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+em{font-style:normal}
+li{list-style:none}
+a{color:#172c45;text-decoration:none} 
+$fontSize :15px;
+
+@mixin size($width : 100px,$height : 100px){
+	width :$width;
+	height: $height;
+}
+@mixin position($position : absolute,$left : 0,$top : 0){
+    position: $position;
+    left: $left;
+    top: $top;
+}
