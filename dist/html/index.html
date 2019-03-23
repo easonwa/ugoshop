@@ -5,6 +5,7 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/index.min.css">
 		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="../js/main.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -14,12 +15,14 @@
 					<span class="notice">
 						公告 : 
 					</span >
-					<ul class="noticeContent">
-						<li>惠买（优购物）5周年庆，盛大聚“惠”</li>
-						<li>【公告】防诈骗提醒</li>
-						<li>【注意】自主语音订购说明</li>
-						<li>【紧急通知】关于短信发送异常的公告</li>
-					</ul>
+					<div class="noticeBox">	
+						<ul class="noticeContent">
+							<li>惠买（优购物）5周年庆，盛大聚“惠”</li>
+							<li>【公告】防诈骗提醒</li>
+							<li>【注意】自主语音订购说明</li>
+							<li>【紧急通知】关于短信发送异常的公告</li>
+						</ul>
+					</div>
 					<p class="sNav">
 						<a>注册</a>|
 						<a>登录</a>|
@@ -27,9 +30,15 @@
 						<a>我的关注</a>|
 						<a>资讯</a>|
 						<a>品品牌馆</a>|
-						<a><img src="../img/phone.png" >手机惠买</a>
+						<a><img src="../img/phone.png" >手机惠买	</a>
 					</p>
+					<div class="downApp">
+						<i></i>
+						<img src="../img/ewm90X90.jpg" alt="">
+						<span>扫一扫哦~</span>
+					</div>
 				</div>
+				
 			</div>
 			<!-- logo -->
 			<div class="headerBottom">
@@ -37,8 +46,117 @@
 				<div class="search">
 					<input type="text" id="seaContent" placeholder="请输入商品名称或货号" /><input type="button" value="搜索"/>
 				</div>
+				<img src="../img/top-app-download.png" alt="">
+				
 			</div>
 		</header>
+		<!-- 导航 -->
+		<nav>
+			<div class="navMain">
+				<p>
+					<a href="" id="first">首页</a>
+					<a href=""><img src="../img/icon-tv.png" alt="">视频</a>
+					<a href="">品质厨房</a>
+					<a href="">美食民生</a>
+					<a href="">健康生活</a>
+					<a href="">魅力穿戴</a>
+					<a href="">珠宝收藏</a>
+					<a href="">美肤靓装</a>
+				</p>
+				<span></span>
+			</div>
+		</nav>
+		<!-- 分类菜单 -->
+		<div class="menuBar">
+			<ul>
+				<li>
+					<div class="barTitle kitchen">
+						<img src="../img/newsix_03.png" alt="">
+						<div><a href="">品质厨房</a></div>
+					</div>
+					<div class="barContent">
+						<a href="">烹饪厨具</a>
+						<a href="">厨房电器</a>
+						<a href="">餐饮用具</a>
+						<a href="">厨房配件</a>
+					</div>
+				</li>
+				<li>
+					<div class="barTitle food">
+						<img src="../img/newsix_05.png" alt="">
+						<div><a href="">美食民生</a></div>
+					</div>
+					<div class="barContent">
+						<a href="">进口食品</a>
+						<a href="">滋补养生</a>
+						<a href="">休闲食品</a>
+						<a href="">粮油干货</a>
+						<a href="">酒水茶饮</a>
+						<a href="">跨境直邮</a>
+						<a href="">保健食品</a>
+						<a href="">生鲜食品</a>
+					</div>
+				</li>
+				<li>
+					<div class="barTitle health">
+						<img src="../img/newsix_07.png" alt="">
+						<div><a href="">健康生活</a></div>
+					</div>
+					<div class="barContent">
+						<a href="">优质睡眠</a>
+						<a href="">收纳用品</a>
+						<a href="">生活日用</a>
+						<a href="">生活小电</a>
+						<a href="">装饰/家具</a>
+						<a href="">健身/户外</a>
+						<a href="">生活大电</a>
+					</div>
+				</li>
+				<li>
+					<div class="barTitle wear">
+						<img src="../img/newsix_09.png" alt="">
+						<div><a href="">魅力穿戴</a></div>
+					</div>
+					<div class="barContent">
+						<a href="">女装</a>
+						<a href="">男装</a>
+						<a href="">内衣</a>
+						<a href="">箱包</a>
+						<a href="">鞋靴</a>
+						<a href="">配饰</a>
+						<a href="">户外鞋服</a>
+						
+					</div>
+				</li>
+				<li>
+					<div class="barTitle jewelry">
+						<img src="../img/newsix_09.png" alt="">
+						<div><a href="">珠宝收藏</a></div>
+					</div>
+					<div class="barContent">
+						<a href="">翡翠玉石</a>
+						<a href="">宝石珍珠</a>
+						<a href="">水晶玛瑙</a>
+						<a href="">时尚配饰</a>
+						<a href="">钟表</a>
+						<a href="">文化收藏</a>
+					</div>
+				</li>
+				<li>
+					<div class="barTitle cosmetics">
+						<img src="../img/newsix_11.png" alt="">
+						<div><a href="">美肤靓装</a></div>
+					</div>
+					<div class="barContent">
+						<a href="">面部护理</a>
+						<a href="">洗护护理</a>
+						<a href="">美容仪器</a>
+						<a href="">身体护理</a>
+						<a href="">彩妆香水</a>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</body>
 	
 </html>

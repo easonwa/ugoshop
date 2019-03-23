@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -12,10 +13,13 @@ a {
   color: #172c45;
   text-decoration: none; }
 
+body {
+  font-family: "微软雅黑";
+  position: relative; }
+
 header {
   width: 100%;
   height: 128px;
-  background: pink;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -29,21 +33,52 @@ header {
     header .headerTop .ht-main {
       font-size: 12px;
       line-height: 28px;
-      width: 1001px;
+      width: 1000px;
       height: 100%;
-      background: pink;
       color: #666666;
-      overflow: hidden; }
+      position: relative; }
+  header .noticeBox {
+    height: 100%;
+    width: 200px;
+    overflow: hidden;
+    float: left;
+    position: relative; }
+    header .noticeBox .noticeContent {
+      height: 28px;
+      margin-top: 0;
+      position: absolute;
+      top: 0;
+      left: 2px; }
   header .headerBottom {
-    width: 1001px;
+    width: 1000px;
     height: 98px;
     background: white;
-    padding-top: 20px; }
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between; }
+    header .headerBottom img {
+      cursor: pointer; }
+    header .headerBottom img:last-child {
+      height: 63px;
+      width: 186px; }
   header .search {
-    width: 418px;
-    height: 34px; }
-    header .search input {
-      border: none; }
+    width: 416px;
+    height: 32px;
+    border: 2px solid #f70801;
+    margin-top: 5px; }
+    header .search input:first-child {
+      border: none;
+      width: 341px;
+      height: 32px;
+      text-indent: 12px; }
+    header .search input:last-child {
+      border: none;
+      font-size: 12px;
+      color: #FFFFFF;
+      width: 75px;
+      height: 32px;
+      background: #f70801;
+      cursor: pointer; }
 
 header .headerTop .ht-main .notice {
   padding-left: 17px;
@@ -71,3 +106,109 @@ header .headerTop .ht-main .sNav {
     header .headerTop .ht-main .sNav a:last-child img {
       margin-right: 6px;
       vertical-align: middle; }
+
+header .headerTop .downApp {
+  width: 110px;
+  height: 138px;
+  background: #fff;
+  position: absolute;
+  right: -30px;
+  top: 27px;
+  box-shadow: 0 0 3px #ddd;
+  display: none; }
+  header .headerTop .downApp i {
+    display: block;
+    width: 14px;
+    height: 7px;
+    position: absolute;
+    top: -6px;
+    left: 48px;
+    background: url(../../dist/img/icon.png);
+    background-position: 0 -146px; }
+  header .headerTop .downApp img {
+    padding: 12px 0 0 12px; }
+  header .headerTop .downApp span {
+    font-size: 14px;
+    color: #f70800;
+    margin-left: 21px; }
+
+nav {
+  width: 100%;
+  height: 40px;
+  background: #f70800;
+  display: flex;
+  justify-content: center; }
+  nav .navMain {
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; }
+    nav .navMain a {
+      float: left;
+      font-size: 15px;
+      color: #fff;
+      line-height: 40px;
+      padding: 0 20px;
+      font-weight: bold;
+      height: 40px; }
+    nav .navMain a:first-child {
+      background: #bc0600; }
+    nav .navMain a:nth-child(2) img {
+      vertical-align: text-bottom;
+      padding-right: 2px;
+      border: none; }
+    nav .navMain span {
+      display: b;
+      height: 100%;
+      width: 134px;
+      cursor: pointer;
+      background: url(../../dist/img/searchbar.jpg) no-repeat;
+      background-position: 0 -65px; }
+
+.menuBar {
+  width: 998px;
+  height: 270px;
+  border: 1px solid #f70800;
+  position: absolute;
+  left: 50%;
+  margin-left: -500px;
+  display: none; }
+  .menuBar ul {
+    width: 100%;
+    height: 270px;
+    display: flex; }
+    .menuBar ul li {
+      width: 165px;
+      height: 100%;
+      border-right: 1px solid #ededed;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .menuBar ul li .barTitle {
+        width: 135px;
+        height: 49px;
+        border-bottom: 1px dashed #d9d9d9;
+        font-size: 15px;
+        color: #222;
+        margin-top: 5px; }
+        .menuBar ul li .barTitle img {
+          line-height: 46px;
+          float: left;
+          margin-left: 15px; }
+        .menuBar ul li .barTitle div {
+          float: left; }
+          .menuBar ul li .barTitle div a {
+            line-height: 46px;
+            font-weight: bold; }
+      .menuBar ul li .barContent {
+        width: 135px;
+        font-size: 12px;
+        color: #555;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4px; }
+        .menuBar ul li .barContent a {
+          line-height: 24px; }
+    .menuBar ul li:last-child {
+      border: none; }
