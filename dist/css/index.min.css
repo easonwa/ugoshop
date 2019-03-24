@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0; }
 
+i {
+  font-style: normal; }
+
 em {
   font-style: normal; }
 
@@ -24,9 +27,10 @@ header {
   flex-direction: column;
   align-items: center; }
   header .headerTop {
-    width: 100%;
+    width: 1583px;
     height: 28px;
-    border: 1px solid #e1e1e2;
+    border-top: 1px solid #e1e1e2;
+    border-bottom: 1px solid #e1e1e2;
     display: flex;
     justify-content: center;
     background: #f6f6f6; }
@@ -172,7 +176,9 @@ nav {
   position: absolute;
   left: 50%;
   margin-left: -500px;
-  display: none; }
+  display: none;
+  z-index: 10;
+  background: #ffffff; }
   .menuBar ul {
     width: 100%;
     height: 270px;
@@ -212,3 +218,265 @@ nav {
           line-height: 24px; }
     .menuBar ul li:last-child {
       border: none; }
+
+.bannerBox {
+  width: 100%;
+  height: 340px;
+  position: relative; }
+  .bannerBox img {
+    width: 100%;
+    height: 340px; }
+  .bannerBox .mark {
+    width: 1000px;
+    height: 340px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -500px; }
+    .bannerBox .mark a {
+      display: block;
+      height: 60px;
+      width: 30px; }
+    .bannerBox .mark .leftPoint {
+      float: left;
+      margin-top: 140px;
+      background: url(../../dist/img/scroll.png) no-repeat;
+      background-position: 0 0;
+      display: none; }
+    .bannerBox .mark .leftPoint:hover {
+      background-position: -92px -76px; }
+    .bannerBox .mark .rightPoint {
+      margin-top: 140px;
+      float: right;
+      background: url(../../dist/img/scroll.png) no-repeat;
+      background-position: 0 -76px;
+      display: none; }
+    .bannerBox .mark .rightPoint:hover {
+      background-position: -92px 0px; }
+    .bannerBox .mark span {
+      display: block;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background: #f73100;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      opacity: 0.85; }
+
+.right-funct {
+  height: 100%;
+  width: 36px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: url(../../dist/img/rightbg.jpg) repeat-y right; }
+  .right-funct .sign-in {
+    position: relative;
+    top: 40%; }
+    .right-funct .sign-in li {
+      width: 36px;
+      height: 36px;
+      z-index: 11;
+      border-radius: 0 0 0 5px; }
+    .right-funct .sign-in li:first-child {
+      background: url(../../dist/img/xfbj.png) no-repeat;
+      background-position: 0 0; }
+    .right-funct .sign-in li:first-child:hover {
+      background-position: -46px 0; }
+    .right-funct .sign-in li:last-child {
+      background: url(../../dist/img/xfbj.png) no-repeat;
+      background-position: 0 -92px; }
+    .right-funct .sign-in li:last-child:hover {
+      background-position: -46px -92px; }
+  .right-funct .first-li {
+    width: 260px;
+    height: 230px;
+    background: #ffffff;
+    position: relative;
+    top: 0;
+    left: -262px;
+    border: 1px solid #ddd;
+    display: none; }
+    .right-funct .first-li header {
+      width: 100%;
+      height: 167px;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .right-funct .first-li header img {
+        margin-bottom: 4px; }
+      .right-funct .first-li header span {
+        cursor: pointer;
+        color: #f94e49; }
+    .right-funct .first-li footer {
+      width: 100%;
+      height: 63px;
+      background: #f8f8f8;
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+      .right-funct .first-li footer span {
+        cursor: pointer;
+        display: block;
+        font-size: 12px;
+        width: 88px;
+        height: 28px;
+        text-align: center;
+        line-height: 28px;
+        border-radius: 5px 5px 5px 5px;
+        border: 1px solid #dddddd; }
+  .right-funct .last-li {
+    width: 90px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    background: #666;
+    position: relative;
+    left: -90px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    display: none; }
+
+.right-funct .right-bottom {
+  position: absolute;
+  bottom: -3px; }
+  .right-funct .right-bottom li {
+    height: 36px;
+    width: 36px; }
+    .right-funct .right-bottom li span {
+      display: block;
+      position: relative;
+      left: -90px;
+      width: 90px;
+      height: 36px;
+      border-radius: 5px 0 0 5px;
+      font-size: 12px;
+      text-align: center;
+      line-height: 36px;
+      color: #fff;
+      background: #666;
+      display: none; }
+  .right-funct .right-bottom li:first-child {
+    border-radius: 5px 0 0 0;
+    background: url(../../dist/img/xfbj.png) no-repeat;
+    background-position: 0 -184px; }
+    .right-funct .right-bottom li:first-child img {
+      display: block;
+      position: relative;
+      left: -132px;
+      top: -71px;
+      display: block; }
+  .right-funct .right-bottom li:nth-child(2) {
+    background: url(../../dist/img/xfbj.png) no-repeat;
+    background-position: 0 -230px; }
+  .right-funct .right-bottom li:last-child {
+    border-radius: 0 0 0 5px;
+    background: url(../../dist/img/xfbj.png) no-repeat;
+    background-position: 0 -276px; }
+  .right-funct .right-bottom li:first-child:hover {
+    background: url(../../dist/img/xfbj.png) no-repeat;
+    background-position: -47px -184px; }
+  .right-funct .right-bottom li:nth-child(2):hover {
+    background: url(../../dist/img/xfbj.png) no-repeat;
+    background-position: -47px -230px; }
+  .right-funct .right-bottom li:last-child:hover {
+    background: url(../../dist/img/xfbj.png) no-repeat;
+    background-position: -47px -276px; }
+
+section {
+  width: 100%;
+  height: auto;
+  background: #f2f2f2; }
+
+section .live-tv {
+  width: 1000px;
+  height: 384px;
+  margin: 0 auto; }
+  section .live-tv .live-tv-top {
+    width: 100%;
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    section .live-tv .live-tv-top .live-tv-topl {
+      font-size: 16px;
+      color: #444; }
+      section .live-tv .live-tv-top .live-tv-topl span {
+        font-size: 24px;
+        font-weight: bold; }
+        section .live-tv .live-tv-top .live-tv-topl span i {
+          width: 4px;
+          height: 22px;
+          background: #f70800;
+          float: left;
+          margin: 7px 8px 0 0; }
+        section .live-tv .live-tv-top .live-tv-topl span b {
+          font-size: 26px;
+          color: #f70800; }
+  section .live-tv .live-tv-bottom {
+    box-sizing: border-box;
+    height: 316px;
+    width: 1000px;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 19px; }
+    section .live-tv .live-tv-bottom .bottom-content li {
+      box-sizing: border-box;
+      padding: 0 10px;
+      height: 266px;
+      width: 320px;
+      float: left;
+      position: relative; }
+      section .live-tv .live-tv-bottom .bottom-content li .bigimg {
+        width: 300px;
+        height: 160px; }
+      section .live-tv .live-tv-bottom .bottom-content li p {
+        font-size: 15px;
+        text-indent: 10px;
+        margin-top: 10px;
+        height: 52px; }
+      section .live-tv .live-tv-bottom .bottom-content li span {
+        font-size: 26px;
+        text-indent: 10px; }
+      section .live-tv .live-tv-bottom .bottom-content li i {
+        font-size: 12px;
+        color: #bfb9b9;
+        text-decoration: line-through;
+        margin-left: 10px; }
+      section .live-tv .live-tv-bottom .bottom-content li .smallimg {
+        width: 67px;
+        height: 23px;
+        position: absolute;
+        top: 13px;
+        right: 22px; }
+      section .live-tv .live-tv-bottom .bottom-content li .living {
+        display: block;
+        width: 80px;
+        height: 22px;
+        background: #ff3f5a;
+        border-radius: 11px 11px 11px 11px;
+        line-height: 22px;
+        font-size: 12px;
+        color: #fff;
+        overflow: hidden;
+        position: absolute;
+        top: 10px;
+        left: 20px; }
+        section .live-tv .live-tv-bottom .bottom-content li .living i {
+          height: 5px;
+          width: 5px;
+          border-radius: 50%;
+          display: inline-block;
+          background: #fff;
+          margin: 0;
+          transform: translateY(-2px); }
+      section .live-tv .live-tv-bottom .bottom-content li .living:after {
+        content: "TV直播中"; }
+    section .live-tv .live-tv-bottom .bottom-content li:nth-child(2) {
+      border-left: 1px solid #eee;
+      border-right: 1px solid #eee; }
