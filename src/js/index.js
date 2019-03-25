@@ -153,6 +153,62 @@ $(function(){
 	})
 	$('.right-funct .right-bottom li:eq(2)').click(function(){
 		$(window).scrollTop(0);
-		
 	})
+	//直播倒计时
+	$.getJSON('../json/count-down.json',function(obj){
+		var intSecond = parseInt(obj.hours*(3600)+obj.minutes*60+obj.seconds);
+		setInterval(function(){
+			var hour = 0;
+			var minute = 0;
+			var second = 0;
+			if(intSecond > 0){
+				hour = Math.floor(intSecond/(3600));
+				minute = Math.floor((intSecond-(hour*3600))/60);
+				second = Math.floor(intSecond-hour*3600-minute*60);
+			}
+			if(hour<=9){hour='0'+hour};
+			if(minute<=9){hour='0'+minute};
+			if(second<=9){hour='0'+second};
+			$('.count-down .hours').html(hour+':');
+			$('.count-down .minutes').html(minute+':');
+			$('.count-down .seconds').html(second);
+			intSecond --;
+		},1000)
+	})
+	//动态创建商品图片
+		$.getJSON("../json/goodchoice.json",function(arr){
+	 		for(var i =0,len=arr.length;i<len;i++){
+				$('.gdchoice-content-box>ul').append(
+				`<li>
+	 				<div class="gdchoice-content-main">
+	 					<img src="${arr[i].src}" class="gdchoice-content-img">
+	 					<p class="img-tits">${arr[i].imgTits}</p>
+	 					<p class="small-tit">${arr[i].smallTit}</p>
+						<p class="price-bottom">
+							<span>${arr[i].nowPrice} <i>${arr[i].prePrice}</i></span>
+	 						<b><em>${arr[i].people}</em>已购买</b>
+						</p>
+	 				</div>
+				</li>`;
+ 			)
+ 		}
+	 })
+
 })
+// 	$.getJSON("../json/goodchoice.json",function(arr){
+// 		for(var i =0,len=arr.length;i<len;i++){
+// 			$('.gdchoice-content-box>ul').append(
+// // 			`<li>
+// // 				<div class="gdchoice-content-main">
+// // 					<img src="${arr[i].src}" class="gdchoice-content-img">
+// // 					<p class="img-tits">${arr[i].imgTits}</p>
+// // 					<p class="small-tit">${arr[i].smallTit}</p>
+// // 					<p class="price-bottom">
+// // 						<span>${arr[i].nowPrice} <i>${arr[i].prePrice}</i></span>
+// // 						<b><em>${arr[i].people}</em>已购买</b>
+// // 					</p>
+// // 				</div>
+// // 			</li>`
+// // 			)
+// 		}
+// 	})

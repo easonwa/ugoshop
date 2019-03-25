@@ -451,6 +451,7 @@ section{
 section .live-tv{
 	@include size(1000px,384px);
 	margin: 0 auto;
+	position: relative;
 	.live-tv-top{
 		width: 100%;
 		height:66px;
@@ -498,7 +499,7 @@ section .live-tv{
 				}
 				p{
 					font-size:15px ;
-					text-indent: 10px;
+					padding-left: 10px;
 					margin-top: 10px;
 					height: 52px;
 				}
@@ -545,11 +546,362 @@ section .live-tv{
 				.living:after{
 					content: "TV直播中";
 				}
+				.count-down{
+					width: 130px;
+					height: 40px;
+					background: #707070;
+					opacity: 0.7;
+					border-radius: 20px 20px 20px 20px;
+					position: absolute;
+					left: 90px;
+					top: 63px;
+					color: #fff;
+					text-align: center;
+					line-height: 40px;
+					span{
+						font-weight: normal;
+						font-size: 20px;
+					}
+				}
 			}
 			li:nth-child(2){
 				border-left:1px solid #eee ;
 				border-right:1px solid #eee ;
 			}
 		}
+	}
+	//左右按钮
+	#t-pre{
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+		border: 2px solid #ebebeb;
+		color: #ccc;
+		font-size: 26px;
+		line-height: 40px;
+		text-align: center;
+		position: absolute;
+		font-weight: bold;
+		left: 5px;
+		top:205px;
+		font-family: "宋体";
+	}
+	.t-prev:hover{
+		background: #c1baba;
+		color: #fff;
+	}
+	.t-next{
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+		border: 2px solid #ebebeb;
+		color: #ccc;
+		font-size: 26px;
+		line-height: 40px;
+		text-align: center;
+		position: absolute;
+		font-weight: bold;
+		left: 952px;
+		top:205px;
+		font-family: "宋体";
+	}
+	.t-next:hover{
+		background: #c1baba;
+		color: #fff;
+	}
+}
+// 今日必抢
+.must-buy{
+	@include size(1000px,450px);
+	margin: 0 auto;
+	.must-buy-top{
+		height: 53px;
+		width: 100%;
+		padding-top: 25px;
+		 .must-buy-topl {
+			font-size: 16px;
+			color: #444;
+			span{
+				font-size: 24px;
+				font-weight: bold;
+				i{
+				@include size(4px,22px);
+				background: #f70800;
+				float: left;
+				margin: 7px 8px 0 0;
+				}
+				b{
+					font-size: 26px;
+					color:#f70800 ;
+				}
+			}
+		}
+	}
+	.must-buy-left{
+		height: 372px;
+		width: 240px;
+		background: url(../../dist/img/bg2.jpg);
+		overflow: hidden;
+		position: relative;
+		float: left;
+		.rt{
+			position:absolute ;
+			right: 5px;
+			top:6px;
+			z-index: 5;
+		}
+		.lb{
+			position:absolute ;
+			left: 5px;
+			bottom: 5px;
+			z-index: 5;
+		}
+		.must-buy-left-main{
+			position: relative;
+			display: block;
+			width: 210px;
+			height: 337px;
+			background: #fff;
+			margin: 17px 0 0 15px;
+			box-sizing: border-box;
+			padding: 15px 15px 0 15px;
+			.everyday{
+				height: 30px;
+				width: 119px;
+				background: #aa2424;
+				border-radius:0 0 5px 5px;
+				color: #fff;
+				font-size: 18px;
+				line-height:30px;
+				position:absolute;
+				left:5px;
+				.clock{
+					width: 17px;
+					height: 19px; 
+					vertical-align: text-bottom;
+					margin: 0 7px 0 7px;
+				}
+			}
+			.pan{
+				width: 180px;
+				height: 180px;
+			}
+			.pan-content{
+				color: #222;
+				margin-top: 30px;
+				margin-bottom: 10px;
+			}
+			span{
+				font-size: 26px;
+				color: #222;
+				font-family: arial;
+				margin-right: 10px;
+			}
+			i{
+				font-size: 14px;
+				color: #999;
+				font-family: arial;
+				text-decoration: line-through;
+			}
+			.cut-price{
+				height: 66px;
+				width: 60px;
+				position: absolute;
+				right: -2px;
+				bottom: 0px;
+				background: url(../../dist/img/bg_tag.png) no-repeat;
+				background-size: 100%;
+				font-size: 14px;
+				line-height: 16px;
+				padding-top: 5px;
+				color: #fff;
+				text-align: center;
+				transform: rotate(15deg);
+			}
+		}
+	}
+	.must-buy-right-box{
+		overflow: hidden;
+	}
+	.must-buy-right{
+		height: 372px;
+		width: 745px;
+		box-sizing: border-box;
+		border: 1px solid #ddd;
+		float: right;
+		padding: 15px 0 0 11px;
+		background: #fff;
+		position: relative;
+		div:first-child{
+			border-right: 1px solid #ddd;
+		}
+		.must-buy-right-content{
+			width: 210px;
+			height: 340px;
+			padding: 0 14px;
+			float: left;
+			img{
+				height: 210px;
+				width: 210px;
+			}
+			.img-tit{
+				margin-top: 5px;
+				font-size: 16px;
+				line-height: 27px;
+			}
+			span{
+				font-size: 26px;
+				color: #222;
+				font-family: arial;
+				margin-right: 10px;
+			}
+			i{
+				font-size: 14px;
+				color: #999;
+				font-family: arial;
+				text-decoration: line-through;
+			}
+			.buy-now{
+				height: 24px;
+				width: 67px;
+				background: #f70800;
+				border-radius:12px 12px 12px 12px;
+				font-size: 15px;
+				color: #fff;
+				line-height: 22px;
+				text-align: center;
+				float: right;
+				margin-top: 33px;
+			}
+		}
+		.buy-prev{
+			height: 40px;
+			width: 40px;
+			border-radius: 50%;
+			border: 2px solid #ebebeb;
+			color: #ccc;
+			font-size: 26px;
+			line-height: 40px;
+			text-align: center;
+			position: absolute;
+			font-weight: bold;
+			left: 5px;
+			top:165px;
+			font-family: "宋体";
+		}
+		.buy-next{
+			height: 40px;
+			width: 40px;
+			border-radius: 50%;
+			border: 2px solid #ebebeb;
+			color: #ccc;
+			font-size: 26px;
+			line-height: 40px;
+			text-align: center;
+			position: absolute;
+			font-weight: bold;
+			right: 5px;
+			top:165px;
+			font-family: "宋体";
+		}
+		.buy-prev:hover{
+			background: #c1baba;
+			color: #fff;
+		}
+		.buy-next:hover{
+			@extend .buy-prev:hover;
+		}
+	}
+}
+// 惠买优选
+.gdchoice-tit{
+	@include size(1000px,55px)
+	margin: 0 auto;
+	span{
+				font-size: 24px;
+				font-weight: bold;
+				i{
+				@include size(4px,22px);
+				background: #f70800;
+				float: left;
+				margin: 7px 8px 0 0;
+				}
+				b{
+					font-size: 26px;
+					color:#f70800 ;
+				}
+			}
+}
+.gdchoice-content-box{
+	width: 1020px;
+	min-height: 500px;
+	margin: 0 auto;
+	ul{
+		width: 1020px;
+		height: auto;
+		display: flex;
+		justify-content: space-start;
+		flex-wrap:wrap;
+		
+		li{
+			@include size(318px,460px)
+			border: 1px solid #ddd;
+			margin: 0 10px 20px 10px;
+			background: #f8f8f8;
+			.gdchoice-content-main{
+				width: 100%;
+				height: 453px;
+				border-bottom: 1px solid #eee;
+				background: #FFF;
+				box-sizing: border-box;
+				padding: 10px;
+				.gdchoice-content-img{
+					height: 298px;
+					width: 298px;
+				}
+				.img-tits{
+					margin-top: 18px;
+					line-height: 26px;
+					font-size: 16px;
+					padding: 0 10px;
+					height: 52px;
+					overflow: hidden;
+				}
+				.small-tit{
+					font-size: 12px;
+					color: #f70800;
+					margin-top: 5px;
+					padding: 0 10px;
+					line-height: 16px;
+				}
+				.price-bottom{
+					margin-top: 10px;
+					padding: 0 10px;
+					span{
+						font-size: 26px;
+						color: #222;
+						font-family: arial;
+						margin-right: 10px;
+						float: left;
+						i{
+								font-size: 14px;
+								color: #999;
+								font-family: arial;
+								text-decoration: line-through;
+						}
+					}
+					b{
+						float: right;
+						font-size: 12px;
+						color: #666;
+						em{
+							color: #f70800;
+						}
+					}
+					
+				}
+			}
+		}
+		
 	}
 }

@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0; }
 
+b {
+  font-weight: normal; }
+
 i {
   font-style: normal; }
 
@@ -396,7 +399,8 @@ section {
 section .live-tv {
   width: 1000px;
   height: 384px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
   section .live-tv .live-tv-top {
     width: 100%;
     height: 66px;
@@ -437,7 +441,7 @@ section .live-tv {
         height: 160px; }
       section .live-tv .live-tv-bottom .bottom-content li p {
         font-size: 15px;
-        text-indent: 10px;
+        padding-left: 10px;
         margin-top: 10px;
         height: 52px; }
       section .live-tv .live-tv-bottom .bottom-content li span {
@@ -477,6 +481,305 @@ section .live-tv {
           transform: translateY(-2px); }
       section .live-tv .live-tv-bottom .bottom-content li .living:after {
         content: "TV直播中"; }
+      section .live-tv .live-tv-bottom .bottom-content li .count-down {
+        width: 130px;
+        height: 40px;
+        background: #707070;
+        opacity: 0.7;
+        border-radius: 20px 20px 20px 20px;
+        position: absolute;
+        left: 90px;
+        top: 63px;
+        color: #fff;
+        text-align: center;
+        line-height: 40px; }
+        section .live-tv .live-tv-bottom .bottom-content li .count-down span {
+          font-weight: normal;
+          font-size: 20px; }
     section .live-tv .live-tv-bottom .bottom-content li:nth-child(2) {
       border-left: 1px solid #eee;
       border-right: 1px solid #eee; }
+  section .live-tv #t-pre {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #ebebeb;
+    color: #ccc;
+    font-size: 26px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+    left: 5px;
+    top: 205px;
+    font-family: "宋体"; }
+  section .live-tv .t-prev:hover {
+    background: #c1baba;
+    color: #fff; }
+  section .live-tv .t-next {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #ebebeb;
+    color: #ccc;
+    font-size: 26px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+    left: 952px;
+    top: 205px;
+    font-family: "宋体"; }
+  section .live-tv .t-next:hover {
+    background: #c1baba;
+    color: #fff; }
+
+.must-buy {
+  width: 1000px;
+  height: 450px;
+  margin: 0 auto; }
+  .must-buy .must-buy-top {
+    height: 53px;
+    width: 100%;
+    padding-top: 25px; }
+    .must-buy .must-buy-top .must-buy-topl {
+      font-size: 16px;
+      color: #444; }
+      .must-buy .must-buy-top .must-buy-topl span {
+        font-size: 24px;
+        font-weight: bold; }
+        .must-buy .must-buy-top .must-buy-topl span i {
+          width: 4px;
+          height: 22px;
+          background: #f70800;
+          float: left;
+          margin: 7px 8px 0 0; }
+        .must-buy .must-buy-top .must-buy-topl span b {
+          font-size: 26px;
+          color: #f70800; }
+  .must-buy .must-buy-left {
+    height: 372px;
+    width: 240px;
+    background: url(../../dist/img/bg2.jpg);
+    overflow: hidden;
+    position: relative;
+    float: left; }
+    .must-buy .must-buy-left .rt {
+      position: absolute;
+      right: 5px;
+      top: 6px;
+      z-index: 5; }
+    .must-buy .must-buy-left .lb {
+      position: absolute;
+      left: 5px;
+      bottom: 5px;
+      z-index: 5; }
+    .must-buy .must-buy-left .must-buy-left-main {
+      position: relative;
+      display: block;
+      width: 210px;
+      height: 337px;
+      background: #fff;
+      margin: 17px 0 0 15px;
+      box-sizing: border-box;
+      padding: 15px 15px 0 15px; }
+      .must-buy .must-buy-left .must-buy-left-main .everyday {
+        height: 30px;
+        width: 119px;
+        background: #aa2424;
+        border-radius: 0 0 5px 5px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 30px;
+        position: absolute;
+        left: 5px; }
+        .must-buy .must-buy-left .must-buy-left-main .everyday .clock {
+          width: 17px;
+          height: 19px;
+          vertical-align: text-bottom;
+          margin: 0 7px 0 7px; }
+      .must-buy .must-buy-left .must-buy-left-main .pan {
+        width: 180px;
+        height: 180px; }
+      .must-buy .must-buy-left .must-buy-left-main .pan-content {
+        color: #222;
+        margin-top: 30px;
+        margin-bottom: 10px; }
+      .must-buy .must-buy-left .must-buy-left-main span {
+        font-size: 26px;
+        color: #222;
+        font-family: arial;
+        margin-right: 10px; }
+      .must-buy .must-buy-left .must-buy-left-main i {
+        font-size: 14px;
+        color: #999;
+        font-family: arial;
+        text-decoration: line-through; }
+      .must-buy .must-buy-left .must-buy-left-main .cut-price {
+        height: 66px;
+        width: 60px;
+        position: absolute;
+        right: -2px;
+        bottom: 0px;
+        background: url(../../dist/img/bg_tag.png) no-repeat;
+        background-size: 100%;
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 5px;
+        color: #fff;
+        text-align: center;
+        transform: rotate(15deg); }
+  .must-buy .must-buy-right-box {
+    overflow: hidden; }
+  .must-buy .must-buy-right {
+    height: 372px;
+    width: 745px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    float: right;
+    padding: 15px 0 0 11px;
+    background: #fff;
+    position: relative; }
+    .must-buy .must-buy-right div:first-child {
+      border-right: 1px solid #ddd; }
+    .must-buy .must-buy-right .must-buy-right-content {
+      width: 210px;
+      height: 340px;
+      padding: 0 14px;
+      float: left; }
+      .must-buy .must-buy-right .must-buy-right-content img {
+        height: 210px;
+        width: 210px; }
+      .must-buy .must-buy-right .must-buy-right-content .img-tit {
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 27px; }
+      .must-buy .must-buy-right .must-buy-right-content span {
+        font-size: 26px;
+        color: #222;
+        font-family: arial;
+        margin-right: 10px; }
+      .must-buy .must-buy-right .must-buy-right-content i {
+        font-size: 14px;
+        color: #999;
+        font-family: arial;
+        text-decoration: line-through; }
+      .must-buy .must-buy-right .must-buy-right-content .buy-now {
+        height: 24px;
+        width: 67px;
+        background: #f70800;
+        border-radius: 12px 12px 12px 12px;
+        font-size: 15px;
+        color: #fff;
+        line-height: 22px;
+        text-align: center;
+        float: right;
+        margin-top: 33px; }
+    .must-buy .must-buy-right .buy-prev {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      border: 2px solid #ebebeb;
+      color: #ccc;
+      font-size: 26px;
+      line-height: 40px;
+      text-align: center;
+      position: absolute;
+      font-weight: bold;
+      left: 5px;
+      top: 165px;
+      font-family: "宋体"; }
+    .must-buy .must-buy-right .buy-next {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      border: 2px solid #ebebeb;
+      color: #ccc;
+      font-size: 26px;
+      line-height: 40px;
+      text-align: center;
+      position: absolute;
+      font-weight: bold;
+      right: 5px;
+      top: 165px;
+      font-family: "宋体"; }
+    .must-buy .must-buy-right .buy-prev:hover, .must-buy .must-buy-right .buy-next:hover {
+      background: #c1baba;
+      color: #fff; }
+
+.gdchoice-tit {
+  width: 1000px;
+  height: 55px;
+  margin: 0 auto; }
+  .gdchoice-tit span {
+    font-size: 24px;
+    font-weight: bold; }
+    .gdchoice-tit span i {
+      width: 4px;
+      height: 22px;
+      background: #f70800;
+      float: left;
+      margin: 7px 8px 0 0; }
+    .gdchoice-tit span b {
+      font-size: 26px;
+      color: #f70800; }
+
+.gdchoice-content-box {
+  width: 1020px;
+  min-height: 500px;
+  margin: 0 auto; }
+  .gdchoice-content-box ul {
+    width: 1020px;
+    height: auto;
+    display: flex;
+    justify-content: space-start;
+    flex-wrap: wrap; }
+    .gdchoice-content-box ul li {
+      width: 318px;
+      height: 460px;
+      border: 1px solid #ddd;
+      margin: 0 10px 20px 10px;
+      background: #f8f8f8; }
+      .gdchoice-content-box ul li .gdchoice-content-main {
+        width: 100%;
+        height: 453px;
+        border-bottom: 1px solid #eee;
+        background: #FFF;
+        box-sizing: border-box;
+        padding: 10px; }
+        .gdchoice-content-box ul li .gdchoice-content-main .gdchoice-content-img {
+          height: 298px;
+          width: 298px; }
+        .gdchoice-content-box ul li .gdchoice-content-main .img-tits {
+          margin-top: 18px;
+          line-height: 26px;
+          font-size: 16px;
+          padding: 0 10px;
+          height: 52px;
+          overflow: hidden; }
+        .gdchoice-content-box ul li .gdchoice-content-main .small-tit {
+          font-size: 12px;
+          color: #f70800;
+          margin-top: 5px;
+          padding: 0 10px;
+          line-height: 16px; }
+        .gdchoice-content-box ul li .gdchoice-content-main .price-bottom {
+          margin-top: 10px;
+          padding: 0 10px; }
+          .gdchoice-content-box ul li .gdchoice-content-main .price-bottom span {
+            font-size: 26px;
+            color: #222;
+            font-family: arial;
+            margin-right: 10px;
+            float: left; }
+            .gdchoice-content-box ul li .gdchoice-content-main .price-bottom span i {
+              font-size: 14px;
+              color: #999;
+              font-family: arial;
+              text-decoration: line-through; }
+          .gdchoice-content-box ul li .gdchoice-content-main .price-bottom b {
+            float: right;
+            font-size: 12px;
+            color: #666; }
+            .gdchoice-content-box ul li .gdchoice-content-main .price-bottom b em {
+              color: #f70800; }
