@@ -20,6 +20,9 @@ a {
   text-decoration: none; }
 
 body {
+  font-size: 12px; }
+
+body {
   font-family: "微软雅黑";
   position: relative; }
 
@@ -107,7 +110,8 @@ header .headerTop .ht-main .sNav {
   float: right; }
   header .headerTop .ht-main .sNav a {
     cursor: pointer;
-    padding: 0 10px 0 10px; }
+    padding: 0 10px 0 10px;
+    color: #666; }
   header .headerTop .ht-main .sNav a:last-child {
     padding-right: 0; }
     header .headerTop .ht-main .sNav a:last-child img {
@@ -222,12 +226,14 @@ nav {
     .menuBar ul li:last-child {
       border: none; }
 
+/* banner图*/
 .bannerBox {
   width: 100%;
   height: 340px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .bannerBox img {
-    width: 100%;
+    width: 1920px;
     height: 340px; }
   .bannerBox .mark {
     width: 1000px;
@@ -268,6 +274,7 @@ nav {
       left: 50%;
       opacity: 0.85; }
 
+/*右侧功能键*/
 .right-funct {
   height: 100%;
   width: 36px;
@@ -345,6 +352,7 @@ nav {
     color: #fff;
     display: none; }
 
+/*下半部分功能键*/
 .right-funct .right-bottom {
   position: absolute;
   bottom: -3px; }
@@ -391,6 +399,7 @@ nav {
     background: url(../../dist/img/xfbj.png) no-repeat;
     background-position: -47px -276px; }
 
+/*主要内容框架*/
 section {
   width: 100%;
   height: auto;
@@ -400,7 +409,8 @@ section .live-tv {
   width: 1000px;
   height: 384px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  /*左右按钮*/ }
   section .live-tv .live-tv-top {
     width: 100%;
     height: 66px;
@@ -534,6 +544,7 @@ section .live-tv {
     background: #c1baba;
     color: #fff; }
 
+/*今日必抢*/
 .must-buy {
   width: 1000px;
   height: 450px;
@@ -707,6 +718,7 @@ section .live-tv {
       background: #c1baba;
       color: #fff; }
 
+/*惠买优选*/
 .gdchoice-tit {
   width: 1000px;
   height: 55px;
@@ -783,3 +795,92 @@ section .live-tv {
             color: #666; }
             .gdchoice-content-box ul li .gdchoice-content-main .price-bottom b em {
               color: #f70800; }
+
+/*footer部分*/
+footer {
+  width: 100%;
+  height: 519px;
+  border-top: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  footer .footer-list {
+    box-sizing: border-box;
+    padding: 25px 0 0 75px;
+    width: 1000px;
+    height: 167px;
+    border-bottom: 1px solid #e6e6e6; }
+    footer .footer-list li {
+      width: 95px;
+      height: 115px;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      padding-left: 42px;
+      border-right: 1px dashed #e6e6e6; }
+      footer .footer-list li .li-tit {
+        font-size: 16px;
+        color: #333; }
+      footer .footer-list li a {
+        font-size: 12px;
+        line-height: 22px;
+        text-align: left;
+        color: #666679; }
+      footer .footer-list li a:hover {
+        color: red; }
+    footer .footer-list li:last-child {
+      border: none; }
+    footer .footer-list .phonebuy {
+      width: 80px;
+      float: left;
+      margin-left: 22px; }
+      footer .footer-list .phonebuy p {
+        font-size: 12px;
+        text-align: center; }
+      footer .footer-list .phonebuy span {
+        color: #666679; }
+    footer .footer-list .phone-num {
+      margin: 28px; }
+  footer .footer-nav {
+    width: 1140px;
+    height: 162px;
+    padding-top: 22px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #555; }
+    footer .footer-nav .footer-nav-box {
+      text-align: -moz-center;
+      line-height: 26px; }
+      footer .footer-nav .footer-nav-box a {
+        font-size: 13px;
+        color: #555; }
+      footer .footer-nav .footer-nav-box a:hover {
+        color: red; }
+      footer .footer-nav .footer-nav-box span {
+        margin: 0 12px; }
+    footer .footer-nav .footer-nav-link {
+      height: 22px;
+      width: 940px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px; }
+      footer .footer-nav .footer-nav-link a {
+        padding-right: 8px;
+        color: #555; }
+      footer .footer-nav .footer-nav-link a:hover {
+        color: red; }
+    footer .footer-nav p {
+      line-height: 23px; }
+      footer .footer-nav p a:hover {
+        color: red; }
+    footer .footer-nav .footer-r-button {
+      cursor: pointer; }
+    footer .footer-nav .beian img {
+      vertical-align: middle; }
+    footer .footer-nav .beian span {
+      line-height: 24px;
+      margin-left: 5px; }

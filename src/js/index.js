@@ -1,6 +1,6 @@
 $(function(){
 	// 公告移入效果
-	$notics = $(".noticeContent li")
+	 var $notics = $(".noticeContent li");
 	$.each($notics,function(index,value){
 		$(value).hover(function(){
 			$(this).css('color','#f74333');
@@ -10,7 +10,7 @@ $(function(){
 	})
 	//公告轮播
 	function autoPlay(){
-		$oUl=$('.noticeContent')
+		var $oUl=$('.noticeContent');
 		var timer = setInterval(function(){
 			var oLi = document.querySelectorAll('.noticeContent li')[0];
 			$oUl.append($(oLi).clone());
@@ -21,7 +21,7 @@ $(function(){
 		},3000)
 	}autoPlay()	
 	//小导航栏移入效果
-	$sNavs = $('.ht-main .sNav a');
+	var $sNavs = $('.ht-main .sNav a');
 	$sNavs.each(function(index,value){
 		$(value).hover(function(){
 			$(this).css('color','#f74333');
@@ -189,26 +189,27 @@ $(function(){
 	 						<b><em>${arr[i].people}</em>已购买</b>
 						</p>
 	 				</div>
-				</li>`;
+				</li>`
  			)
  		}
 	 })
-
+	 //footer按钮
+	$('footer>.footer-nav .footer-nav-link .footer-r-button').click(function(){
+		if($(this).html()=='▼'){
+			$(this).html('▲')
+		}else{
+			$(this).html('▼')
+		}
+		//alert('('+$(this).html()+')')
+	})
+	
+	
+	
+	
+	
+	
+	
 })
-// 	$.getJSON("../json/goodchoice.json",function(arr){
-// 		for(var i =0,len=arr.length;i<len;i++){
-// 			$('.gdchoice-content-box>ul').append(
-// // 			`<li>
-// // 				<div class="gdchoice-content-main">
-// // 					<img src="${arr[i].src}" class="gdchoice-content-img">
-// // 					<p class="img-tits">${arr[i].imgTits}</p>
-// // 					<p class="small-tit">${arr[i].smallTit}</p>
-// // 					<p class="price-bottom">
-// // 						<span>${arr[i].nowPrice} <i>${arr[i].prePrice}</i></span>
-// // 						<b><em>${arr[i].people}</em>已购买</b>
-// // 					</p>
-// // 				</div>
-// // 			</li>`
-// // 			)
-// 		}
-// 	})
+
+	
+

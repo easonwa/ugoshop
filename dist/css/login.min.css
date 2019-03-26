@@ -1,0 +1,380 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+b {
+  font-weight: normal; }
+
+i {
+  font-style: normal; }
+
+em {
+  font-style: normal; }
+
+li {
+  list-style: none; }
+
+a {
+  color: #172c45;
+  text-decoration: none; }
+
+body {
+  font-size: 12px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+b {
+  font-weight: normal; }
+
+i {
+  font-style: normal; }
+
+em {
+  font-style: normal; }
+
+li {
+  list-style: none; }
+
+a {
+  color: #172c45;
+  text-decoration: none; }
+
+body {
+  font-size: 12px; }
+
+body {
+  font-family: "微软雅黑";
+  position: relative; }
+
+header {
+  width: 100%;
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  header .headerTop {
+    width: 1583px;
+    height: 28px;
+    border-top: 1px solid #e1e1e2;
+    border-bottom: 1px solid #e1e1e2;
+    display: flex;
+    justify-content: center;
+    background: #f6f6f6; }
+    header .headerTop .ht-main {
+      font-size: 12px;
+      line-height: 28px;
+      width: 1000px;
+      height: 100%;
+      color: #666666;
+      position: relative; }
+  header .noticeBox {
+    height: 100%;
+    width: 200px;
+    overflow: hidden;
+    float: left;
+    position: relative; }
+    header .noticeBox .noticeContent {
+      height: 28px;
+      margin-top: 0;
+      position: absolute;
+      top: 0;
+      left: 2px; }
+  header .headerBottom {
+    width: 1000px;
+    height: 98px;
+    background: white;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between; }
+    header .headerBottom img {
+      cursor: pointer; }
+    header .headerBottom img:last-child {
+      height: 63px;
+      width: 186px; }
+  header .search {
+    width: 416px;
+    height: 32px;
+    border: 2px solid #f70801;
+    margin-top: 5px; }
+    header .search input:first-child {
+      border: none;
+      width: 341px;
+      height: 32px;
+      text-indent: 12px; }
+    header .search input:last-child {
+      border: none;
+      font-size: 12px;
+      color: #FFFFFF;
+      width: 75px;
+      height: 32px;
+      background: #f70801;
+      cursor: pointer; }
+
+header .headerTop .ht-main .notice {
+  padding-left: 17px;
+  background: url(../../dist/img/icons.png) no-repeat;
+  background-position: -98px -198px;
+  float: left;
+  padding-right: 11px; }
+
+header .headerTop .ht-main .noticeContent {
+  float: left; }
+  header .headerTop .ht-main .noticeContent li {
+    width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
+header .headerTop .ht-main .sNav {
+  line-height: 28px;
+  float: right; }
+  header .headerTop .ht-main .sNav a {
+    cursor: pointer;
+    padding: 0 10px 0 10px; }
+  header .headerTop .ht-main .sNav a:last-child {
+    padding-right: 0; }
+    header .headerTop .ht-main .sNav a:last-child img {
+      margin-right: 6px;
+      vertical-align: middle; }
+
+header .headerTop .downApp {
+  width: 110px;
+  height: 138px;
+  background: #fff;
+  position: absolute;
+  right: -30px;
+  top: 27px;
+  box-shadow: 0 0 3px #ddd;
+  display: none; }
+  header .headerTop .downApp i {
+    display: block;
+    width: 14px;
+    height: 7px;
+    position: absolute;
+    top: -6px;
+    left: 48px;
+    background: url(../../dist/img/icon.png);
+    background-position: 0 -146px; }
+  header .headerTop .downApp img {
+    padding: 12px 0 0 12px; }
+  header .headerTop .downApp span {
+    font-size: 14px;
+    color: #f70800;
+    margin-left: 21px; }
+
+header {
+  height: 30px; }
+
+.login-box {
+  width: 100%;
+  height: 690px;
+  font-family: "宋体";
+  position: relative; }
+  .login-box .login-box-logo {
+    width: 968px;
+    height: 85px;
+    margin: 0 auto;
+    padding-top: 32px; }
+    .login-box .login-box-logo .logo-img {
+      display: inline-block;
+      height: 57px;
+      width: 185px;
+      background: url(../../dist/img/welland.gif) no-repeat; }
+    .login-box .login-box-logo span {
+      display: inline-block;
+      height: 57px;
+      width: 165px;
+      background: url(../../dist/img/welland.gif) no-repeat;
+      background-position: 0 -57px; }
+    .login-box .login-box-logo em {
+      padding-top: 38px;
+      float: right;
+      color: #525252; }
+      .login-box .login-box-logo em a {
+        color: #0089cf; }
+  .login-box .login-box-tit {
+    width: 968px;
+    height: 42px;
+    margin: 0 auto; }
+    .login-box .login-box-tit span {
+      width: 225px;
+      height: 42px;
+      display: inline-block;
+      background: #ff8400;
+      background-image: url(../../dist/img/bgiphone.jpg);
+      background-repeat: no-repeat;
+      background-position: 60px 12px;
+      border-radius: 3px 3px 0 0;
+      cursor: pointer;
+      line-height: 42px;
+      font-size: 14px;
+      color: white;
+      font-weight: bold;
+      text-indent: 81px;
+      float: left; }
+    .login-box .login-box-tit p {
+      float: right;
+      line-height: 46px; }
+      .login-box .login-box-tit p a {
+        color: #0089cf; }
+      .login-box .login-box-tit p i {
+        color: #eb0007; }
+  .login-box .login-main {
+    height: 478px;
+    width: 964px;
+    border: 2px solid #ff8400;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 45px 0 0 114px; }
+    .login-box .login-main .login-phonenum {
+      width: 725px;
+      height: 37px;
+      margin-bottom: 15px; }
+      .login-box .login-main .login-phonenum .login-main-tit {
+        display: block;
+        width: 67px;
+        height: 37px;
+        text-align: -moz-right;
+        line-height: 37px;
+        color: #666;
+        margin-right: 18px;
+        float: left; }
+      .login-box .login-main .login-phonenum .login-phonenum-cont {
+        height: 35px;
+        width: 350px;
+        border: 1px solid #a2a2a2;
+        float: left;
+        line-height: 35px;
+        margin-right: 5px; }
+        .login-box .login-main .login-phonenum .login-phonenum-cont #phoneNum {
+          border: none;
+          margin-left: 10px;
+          width: 312px; }
+        .login-box .login-main .login-phonenum .login-phonenum-cont .login-phonenum-img {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          background: #ddd;
+          transform: translateY(5px);
+          background: url(../../dist/img/welland.gif);
+          background-position: 0 -225px; }
+      .login-box .login-main .login-phonenum .login-phonenum-check {
+        height: 35px;
+        width: 279px;
+        float: left;
+        text-indent: 9px;
+        line-height: 35px; }
+      .login-box .login-main .login-phonenum .login-check-import {
+        border: 1px solid #e9e9e9;
+        background: #f6f6f6;
+        color: #555; }
+      .login-box .login-main .login-phonenum .login-check-wrong {
+        border: 1px solid #ffadb0;
+        background: #fff3f3;
+        color: #eb0007; }
+    .login-box .login-main .login-checknum {
+      width: 725px;
+      height: 37px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      line-height: 37px;
+      margin-bottom: 7px; }
+      .login-box .login-main .login-checknum .login-main-tit {
+        display: block;
+        width: 67px;
+        height: 37px;
+        text-align: -moz-right;
+        line-height: 37px;
+        color: #666;
+        margin-right: 18px;
+        float: left; }
+      .login-box .login-main .login-checknum .login-check-cont {
+        height: 35px;
+        width: 122px;
+        border: 1px solid #a2a2a2;
+        float: left;
+        line-height: 35px;
+        margin-right: 5px; }
+        .login-box .login-main .login-checknum .login-check-cont #checkNum {
+          width: 100px;
+          border: none;
+          margin-left: 10px;
+          font-size: 14px; }
+      .login-box .login-main .login-checknum .login-check-numtext {
+        width: 89px;
+        height: 30px;
+        border: 1px solid #a2a2a2;
+        float: left;
+        margin-top: 5px;
+        font-size: 15px;
+        line-height: 30px;
+        text-align: -moz-center; }
+      .login-box .login-main .login-checknum a {
+        color: #0089cf; }
+      .login-box .login-main .login-checknum a:hover {
+        text-decoration: underline; }
+    .login-box .login-main #login-password {
+      border: none;
+      margin-left: 10px;
+      width: 312px; }
+    .login-box .login-main #login-passworda {
+      border: none;
+      margin-left: 10px;
+      width: 312px; }
+    .login-box .login-main .login-password-img {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background: #ddd;
+      transform: translateY(5px);
+      background: url(../../dist/img/welland.gif);
+      background-position: 0 -248px; }
+    .login-box .login-main #login-main-tit {
+      display: block;
+      width: 72px;
+      height: 37px;
+      text-align: -moz-right;
+      line-height: 37px;
+      color: #666;
+      margin-right: 13px;
+      float: left; }
+    .login-box .login-main button {
+      border: none;
+      height: 26px;
+      width: 116px;
+      color: #858585;
+      background: url(../../dist/img/welreg_01.gif) no-repeat;
+      background-position: 0 -146px; }
+    .login-box .login-main #promise {
+      margin-left: 85px; }
+    .login-box .login-main .promise {
+      color: #0089cf; }
+    .login-box .login-main .login-submit {
+      display: block;
+      width: 126px;
+      height: 33px;
+      border: none;
+      color: #fcfef6;
+      background: #e50038;
+      font-weight: bold;
+      font-size: 15px;
+      margin-left: 85px;
+      margin-top: 24px; }
+    .login-box .login-main .bottom-tit {
+      font-weight: bold;
+      color: #666;
+      margin-left: 85px;
+      margin-top: 29px; }
+    .login-box .login-main .bottom-cont {
+      display: block;
+      margin-left: 85px;
+      color: #888;
+      width: 351px;
+      line-height: 23px; }
+  .login-box .downApps {
+    position: absolute;
+    left: 165px;
+    top: 123px; }

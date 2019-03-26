@@ -8,7 +8,9 @@ em{font-style:normal}
 li{list-style:none}
 a{color:#172c45;text-decoration:none} 
 $fontSize :15px;
-
+body{
+	font-size: 12px;
+}
 @mixin size($width : 100px,$height : 100px){
 	width :$width;
 	height: $height;

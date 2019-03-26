@@ -100,6 +100,7 @@ header .headerTop .ht-main .sNav{
 	a{
 		cursor: pointer;
 		padding: 0 10px 0 10px;
+		color:#666;
 	}
 	a:last-child{
 		padding-right: 0;
@@ -241,12 +242,14 @@ nav{
 		}
 	}
 }
-// banner图
+/* banner图*/
+
 .bannerBox{
 	@include size(100%,340px);
 	position:relative;
+	overflow:hidden;
 	img{
-		width: 100%;
+		width: 1920px;
 		height: 340px;
 	}
 	.mark{
@@ -296,7 +299,7 @@ nav{
 		}
 	}
 }
-//右侧功能键
+/*右侧功能键*/
 .right-funct{
 	height: 100%;
 	width: 36px;
@@ -387,7 +390,7 @@ nav{
 		display: none;
 	}
 }
-//下半部分功能键
+/*下半部分功能键*/
 .right-funct .right-bottom{
 	position: absolute;
 	bottom: -3px;
@@ -443,7 +446,7 @@ nav{
 		background-position: -47px -276px;
 	}
 }
-// 主要内容框架
+ /*主要内容框架*/
 section{
 	@include size(100%,auto)
 	background: #f2f2f2;
@@ -570,7 +573,7 @@ section .live-tv{
 			}
 		}
 	}
-	//左右按钮
+	/*左右按钮*/
 	#t-pre{
 		height: 40px;
 		width: 40px;
@@ -610,7 +613,7 @@ section .live-tv{
 		color: #fff;
 	}
 }
-// 今日必抢
+ /*今日必抢*/
 .must-buy{
 	@include size(1000px,450px);
 	margin: 0 auto;
@@ -813,7 +816,7 @@ section .live-tv{
 		}
 	}
 }
-// 惠买优选
+/*惠买优选*/
 .gdchoice-tit{
 	@include size(1000px,55px)
 	margin: 0 auto;
@@ -903,5 +906,118 @@ section .live-tv{
 			}
 		}
 		
+	}
+}
+/*footer部分*/
+footer{
+	@include size(100%,519px)
+	border-top:1px solid #e6e6e6;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	.footer-list{
+		box-sizing: border-box;
+		padding: 25px 0 0 75px;
+		@include size(1000px,167px)
+		border-bottom:1px solid #e6e6e6;
+		li{
+			width: 95px;
+			height: 115px;
+			float: left;
+			display: flex;
+			flex-direction: column;
+			// align-items: flex-start;
+			padding-left: 42px;
+			border-right: 1px dashed #e6e6e6;
+			.li-tit{
+				font-size: 16px;
+				color: #333;
+			}
+			a{
+				font-size: 12px;
+				line-height: 22px;
+				text-align: left;
+				color: #666679;
+			}
+			a:hover{
+				color: red;
+			}
+			
+		}
+		li:last-child{
+			border: none;
+		}
+		.phonebuy{
+			width: 80px;
+			float: left;
+			margin-left: 22px;
+			p{
+				font-size: 12px;
+				text-align: center;
+			}
+			span{
+				color: #666679;
+			}
+		}
+		.phone-num{
+			margin: 28px;
+		}
+	}
+	.footer-nav{
+		@include size(1140px,162px)
+		padding-top: 22px;
+		font-size:12px;
+		display:flex;
+		flex-direction:column;
+		justify-content:flex-start;
+		align-items:center;
+		color:#555 ;
+		.footer-nav-box{
+			text-align: -moz-center;
+			line-height: 26px;
+			 a{
+				font-size: 13px;
+				color:#555 ;
+			}
+			a:hover{
+				color: red;
+			}
+			span{
+				margin: 0 12px;
+			}
+		}
+		.footer-nav-link{
+			height: 22px;
+			width: 940px;
+			display: flex;
+			justify-content: space-between;
+			margin-top: 10px;
+			a{
+				padding-right:8px ;
+				color:#555
+			}
+			a:hover{
+				color: red;
+			}
+		}
+		p{
+			line-height: 23px;
+			a:hover{
+				color: red;
+			}
+		}
+		.footer-r-button{
+			cursor: pointer;
+		}
+		.beian{
+			img{
+				vertical-align: middle;
+			}
+			span{
+				line-height: 24px;
+				margin-left: 5px;
+			}
+		}
 	}
 }
