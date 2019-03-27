@@ -25,7 +25,11 @@ header{
 			color: #666666;
 			
 			position: relative;
-			
+			.sNav{
+				a{
+					color: #666;
+				}
+			}
 		}
 	}
 	.noticeBox{
@@ -119,7 +123,7 @@ header .headerTop  .downApp{
 	top: 27px;
 	box-shadow: 0 0 3px #ddd;
 	display: none;
-	
+	z-index: 3;
 	i{
 		display: block;
 		width:14px;

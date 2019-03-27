@@ -1,6 +1,6 @@
 @import 'public';
 @import 'header';
-
+@import 'footer';
 header{
 	height: 30px;
 }
@@ -24,8 +24,8 @@ header{
 			display: inline-block;
 			height: 57px;
 			width: 165px;
-			background: url(../../dist/img/welland.gif) no-repeat;
-			background-position: 0 -57px;
+			background: url(../../dist/img/welreg_01.gif) no-repeat;
+			background-position: 0 0px;
 		}
 		em{
 			padding-top: 38px;
@@ -125,6 +125,7 @@ header{
 				border: 1px solid #e9e9e9;
 				background: #f6f6f6;
 				color: #555;
+				
 				
 			}
 			.login-check-wrong{
@@ -261,4 +262,150 @@ header{
 	}	
 	
 	
+}
+.right-funct{
+	height: 100%;
+	width: 36px;
+	position: fixed;
+	right: 0;
+	top:0;
+	background: url(../../dist/img/rightbg.jpg) repeat-y right;
+	.sign-in{
+		position: relative;
+		top: 40%;
+		li{
+			width: 36px;
+			height: 36px;
+			z-index: 11;
+			border-radius: 0 0 0 5px;
+		}
+		li:first-child{
+			background: url(../../dist/img/xfbj.png) no-repeat;
+			background-position: 0 0;
+		}
+		li:first-child:hover{
+			background-position:-46px 0;
+		}
+		li:last-child{
+			background: url(../../dist/img/xfbj.png) no-repeat;
+			background-position: 0 -92px;
+		}
+		li:last-child:hover{
+			background-position:-46px -92px;
+		}
+	}
+	.first-li{
+		width: 260px;
+		height: 230px;
+		background: #ffffff;
+		position: relative;
+		top: 0;
+		left:-262px;
+		border:1px solid #ddd;
+		display: none;
+		header{
+			width: 100%;
+			height: 167px;
+			font-size: 12px;
+			img{
+				margin-bottom: 4px;
+			}
+			span{
+				cursor: pointer;
+				color: #f94e49;
+			}
+			display:flex;
+			flex-direction:column;
+			justify-content: center;
+			align-items: center;
+		}
+		footer{
+			width: 100%;
+			height: 63px;
+			background: #f8f8f8;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			span{
+				cursor: pointer;
+				display: block;
+				font-size: 12px;
+				width: 88px;
+				height: 28px;
+				text-align: center;
+				line-height: 28px;
+				border-radius: 5px 5px 5px 5px;
+				border: 1px solid #dddddd;
+			}
+		}
+	}
+	.last-li{
+		width: 90px;
+		height:36px ;
+		border-radius: 5px 0 0 5px;
+		background: #666;
+		position: relative;
+		left:-90px;
+		font-size:12px;
+		text-align: center;
+		line-height:36px ;
+		color: #fff;
+		display: none;
+	}
+}
+/*下半部分功能键*/
+.right-funct .right-bottom{
+	position: absolute;
+	bottom: -3px;
+	li{
+		height: 36px;
+		width: 36px;
+		span{
+			display: block;
+			position: relative;
+			left: -90px;
+			width: 90px;
+			height:36px;
+			border-radius: 5px 0 0 5px;
+			font-size:12px;
+			text-align: center;
+			line-height:36px ;
+			color: #fff;
+			background: #666;
+			display: none;
+		}
+	}
+	li:first-child{
+		border-radius: 5px 0 0 0 ;
+		background: url(../../dist/img/xfbj.png) no-repeat;
+		background-position: 0 -184px;
+		img{
+			display: block;
+			position: relative;
+			left:-132px;
+			top:-71px;
+			display: block;
+		}
+	}
+	li:nth-child(2){
+		background: url(../../dist/img/xfbj.png) no-repeat;
+		background-position: 0 -230px;
+	}
+	li:last-child{
+		border-radius: 0 0 0 5px;
+		background: url(../../dist/img/xfbj.png) no-repeat;
+		background-position: 0 -276px;
+	}
+	li:first-child:hover{
+		background: url(../../dist/img/xfbj.png) no-repeat;
+		background-position: -47px -184px;
+	}
+	li:nth-child(2):hover{
+		background: url(../../dist/img/xfbj.png) no-repeat;
+		background-position: -47px -230px;
+	}
+	li:last-child:hover{
+		background: url(../../dist/img/xfbj.png) no-repeat;
+		background-position: -47px -276px;
+	}
 }

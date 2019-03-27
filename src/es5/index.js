@@ -23,6 +23,12 @@ $(function () {
         $oUl.css('top', '0');
       });
     }, 3000);
+    $oUl.mouseenter(function () {
+      clearInterval(timer);
+    });
+    $oUl.mouseleave(function () {
+      autoPlay();
+    });
   }
 
   autoPlay(); //小导航栏移入效果

@@ -2,11 +2,12 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>注册</title>
-		<link rel="stylesheet" href="../css/login.min.css">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="../css/register.min.css"/>
 		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
-		<script type="text/javascript" src="../../src/js/login.js"></script>
+		
 		<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="../../src/js/register.js"></script>
 	</head>
 	<body>
 		<header>
@@ -33,79 +34,38 @@
 			<!-- logo -->
 				
 			</header>
-			<!-- 注册 -->
+			<!-- 登录 -->
 			<div class="login-box">
 				<div class="login-box-logo">
-					<a href="" class="logo-img"></a><span></span><em>已经注册，<a href="./register.html">现在登录》</a></em>
-				</div>
-				<div class="login-box-tit">
-					<span>注册/TV激活</span>
-					<p>如有疑问请点击<a href="">帮助中心，</a>或拨打客服热线：<i>400-707-0707</i></p>
+					<a href="" class="logo-img"></a><span></span>
+					<div class="login-box-tit">
+						<p>如有疑问请点击<a href="">帮助中心，</a>或拨打客服热线：<i>400-707-0707</i></p>
+					</div>
 				</div>
 				<div class="login-main">
-					<!-- 手机号 -->
-					<div class="login-phonenum">
-						<span class="login-main-tit">
-							手机号码：
-						</span>
-						<div class="login-phonenum-cont">
-							<input type="text"  id="phoneNum" value="" /><span class="login-phonenum-img"></span>
+					<div class="login-main-left">
+						<p>手机号/邮箱/昵称</p>
+						<div class="register-name-box">
+							<input type="text" id="register-name" placeholder="请输入您注册的手机号/邮箱/昵称" /><span id="register-img"></span>
 						</div>
-						<div class="login-phonenum-check">
-							
+						<div class="register-name-warn">
+							请输入您注册的手机号/邮箱/昵称
 						</div>
-					</div>
-					<!-- 验证码 -->
-					<div class="login-checknum">
-						<span class="login-main-tit">
-							验证码：
-						</span>
-						<div class="login-check-cont">
-							<input type="text"  id="checkNum" value="" /><span class="login-phonenum-img"></span>
+						<p>密码</p>
+						<div class="register-password">
+							<input type="text" id="register-password" value="" />
 						</div>
-						<div class="login-check-numtext ">
-							
+						<div class="register-password-warn">
+							请输入您注册的手机号/邮箱/昵称
 						</div>
-						看不清，<a id="change-num">换一张</a>
-					</div>
-					<!-- 密码 -->
-					<div class="login-phonenum">
-						<span class="login-main-tit">
-							设置密码：
-						</span>
-						<div class="login-phonenum-cont">
-							<input type="text"  id="login-password" value="" /><span class="login-password-img"></span>
-						</div>
-						<div class="login-phonenum-check ">
-							
+						<div class="remember">
+							<input type="checkbox"> <label>记住用户名</label><a href="">忘记密码</a>
 						</div>
 					</div>
-					<!-- 确认密码 -->
-					<div class="login-phonenum">
-						<span class="login-main-tit">
-							确认密码：
-						</span>
-						<div class="login-phonenum-cont">
-							<input type="text"  id="login-passworda" value="" /><span class="login-password-img"></span>
-						</div>
-						<div class="login-phonenum-check ">
-							
-						</div>
+					<div class="login-main-right">
+						
 					</div>
-					<!-- 获取短信验证码 -->
-					<div class="login-checknum">
-						<span id="login-main-tit">
-							短信验证码：
-						</span>
-						<div class="login-check-cont">
-							<input type="text"  id="checkNum" value="" /><span class="login-phonenum-img"></span>
-						</div>
-						<button type="button">获取短信验证码</button>
-					</div>
-					<input type="checkbox" name="" id="promise" value="" /> 我已阅读并同意<a href="" class="promise"> 《惠买用户服务承诺》</a>
-					<input type="button" value="提    交" class="login-submit">
-					<p class="bottom-tit">温馨提示：</p>
-					<p class="bottom-cont">惠买升级为电视购物大全，其中收录了优购物、时尚购物等多家优<br>质购物频道，您可以选购更多优质商品，欢迎您的光临！</p>
+					
 				</div>
 				<img src="../img/logEWM.gif" class="downApps">
 			</div>
