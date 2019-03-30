@@ -208,8 +208,83 @@ $(function(){
 		}
 		//alert('('+$(this).html()+')')
 	})
+	//banner图
+	var index = 0
+	var $banBox=$('.banner-imgbox2');
+	//自动轮播
+	function autoPlays(){
+		var timer = null;
+		timer = setInterval(function(){
+			var $banBox=$('.banner-imgbox2');
+			if(index === 3){
+				index = 1;
+				$banBox.css('left','0');
+			}
+			$banBox.animate({left:-1920*index},1000),
+			 bottomPo()
+			index ++;
+		},3000)
+		$('.mark').mouseenter(function(){
+			clearInterval(timer);
+		})
+		$('.mark').mouseleave(function(){
+			autoPlays();
+		})
+	}
+	autoPlays()
+	//console.log($('.banner-imgbox2').children().length)
+	//轮播左按钮
+	$('.leftPoint').click(function(){
+		index--;
+		if(index < 0){
+			index =1;
+			$banBox.css('left',-3840);
+		}
+		$banBox.animate({left:-1920*index},1000);
+		 bottomPo()
+		console.log(index)
+	})
+	//轮播右按钮
 	
-	
+	$('.rightPoint').click(function(){
+		index++;
+		 
+		if(index > 2){
+			index =1;
+			$banBox.css('left',0);
+		}
+		$banBox.animate({left:-1920*index},1000);
+		 bottomPo()
+		console.log(index)
+	})
+	//小按钮
+	function bottomPo(){
+		var $bP1 = $('.bottom-ponit1');
+		var $bP2 = $('.bottom-ponit2');
+		if(index==$bP1.attr('index')){
+			$bP1.css('background','#f73100');
+			$bP2.css('background','#ece5dd');
+		}else if(index==$bP2.attr('index')){
+			$bP2.css('background','#f73100');
+			$bP1.css('background','#ece5dd');
+		}else{
+			$bP1.css('background','#f73100');
+			$bP2.css('background','#ece5dd');
+		}
+		//console.log($bP1.attr('index'));
+	}
+	var $bP1 = $('.bottom-ponit1');
+	var $bP2 = $('.bottom-ponit2');
+	$bP1.click(function(){
+		$banBox.animate({left:0},1000);
+		$bP1.css('background','#f73100');
+		$bP2.css('background','#ece5dd');
+	})
+	$bP2.click(function(){
+		$banBox.animate({left:-1920},1000);
+		$bP2.css('background','#f73100');
+		$bP1.css('background','#ece5dd');
+	})
 	
 	
 	

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/product.min.css">
+		<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/product.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<!-- 公告 -->
+			<div class="headerTop">
+				<div class="ht-main">
+					<span class="notice">
+						公告 : 
+					</span >
+					<div class="noticeBox">	
+						<ul class="noticeContent">
+							<li>惠买（优购物）5周年庆，盛大聚“惠”</li>
+							<li>【公告】防诈骗提醒</li>
+							<li>【注意】自主语音订购说明</li>
+							<li>【紧急通知】关于短信发送异常的公告</li>
+						</ul>
+					</div>
+					<p class="sNav">
+						<a>注册</a>|
+						<a>登录</a>|
+						<a>我的订单</a>|
+						<a>我的关注</a>|
+						<a>资讯</a>|
+						<a>品品牌馆</a>|
+						<a><img src="../img/phone.png" >手机惠买	</a>
+					</p>
+					<div class="downApp">
+						<i></i>
+						<img src="../img/ewm90X90.jpg" alt="">
+						<span>扫一扫哦~</span>
+					</div>
+				</div>
+			</div>
+			<!-- logo -->
+			<div class="headerBottom">
+				<img src="../img/logo.png" >
+				<div class="search">
+					<input type="text" id="seaContent" placeholder="请输入商品名称或货号" /><input type="button" value="搜索"/>
+				</div>
+				<img src="../img/top-app-download.png" alt="">
+				
+			</div>
+		</header>
+		<!-- 导航 -->
+		<nav>
+			<div class="navMain">
+				<p>
+					<a href="" id="first">首页</a>
+					<a href=""><img src="../img/icon-tv.png" alt="">视频</a>
+					<a href="">品质厨房</a>
+					<a href="">美食民生</a>
+					<a href="">健康生活</a>
+					<a href="">魅力穿戴</a>
+					<a href="">珠宝收藏</a>
+					<a href="">美肤靓装</a>
+				</p>
+				<span></span>
+			</div>
+		</nav>
+		<!-- 分类菜单 -->
+		<div class="menuBar">
+			<ul>
+				<li>
+					<div class="barTitle kitchen">
+						<img src="../img/newsix_03.png" alt="">
+						<div><a href="">品质厨房</a></div>
+					</div>
+					<div class="barContent">
+						<a href="">烹饪厨具</a>
+						<a href="">厨房电器</a>
+						<a href="">餐饮用具</a>
+						<a href="">厨房配件</a>
+					</div>
+				</li>
+				<li>
+					<div class="barTitle food">
+						<img src="../img/newsix_05.png" alt="">
+						<div><a href="">美食民生</a></div>
+					</div>
+					<div class="barContent">
+						<a href="">进口食品</a>
+						<a href="">滋补养生</a>
+						<a href="">休闲食品</a>
+						<a href="">粮油干货</a>
+						<a href="">酒水茶饮</a>
+						<a href="">跨境直邮</a>
+						<a href="">保健食品</a>
+						<a href="">生鲜食品</a>
+					</div>
+				</li>
+				<li>
+					<div class="barTitle health">
+						<img src="../img/newsix_07.png" alt="">
+						<div><a href="">健康生活</a></div>
+					</div>
+					<div class="barContent">
+						<a href="">优质睡眠</a>
+						<a href="">收纳用品</a>
+						<a href="">生活日用</a>
+						<a href="">生活小电</a>
+						<a href="">装饰/家具</a>
+						<a href="">健身/户外</a>
+						<a href="">生活大电</a>
+					</div>
+				</li>
+				<li>
+					<div class="barTitle wear">
+						<img src="../img/newsix_09.png" alt="">
+						<div><a href="">魅力穿戴</a></div>
+					</div>
+					<div class="barContent">
+						<a href="">女装</a>
+						<a href="">男装</a>
+						<a href="">内衣</a>
+						<a href="">箱包</a>
+						<a href="">鞋靴</a>
+						<a href="">配饰</a>
+						<a href="">户外鞋服</a>
+						
+					</div>
+				</li>
+				<li>
+					<div class="barTitle jewelry">
+						<img src="../img/newsix_09.png" alt="">
+						<div><a href="">珠宝收藏</a></div>
+					</div>
+					<div class="barContent">
+						<a href="">翡翠玉石</a>
+						<a href="">宝石珍珠</a>
+						<a href="">水晶玛瑙</a>
+						<a href="">时尚配饰</a>
+						<a href="">钟表</a>
+						<a href="">文化收藏</a>
+					</div>
+				</li>
+				<li>
+					<div class="barTitle cosmetics">
+						<img src="../img/newsix_11.png" alt="">
+						<div><a href="">美肤靓装</a></div>
+					</div>
+					<div class="barContent">
+						<a href="">面部护理</a>
+						<a href="">洗护护理</a>
+						<a href="">美容仪器</a>
+						<a href="">身体护理</a>
+						<a href="">彩妆香水</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- 右侧功能键 -->
+		<div class="right-funct">
+			<ul class="sign-in">
+				<li>
+					<div class="first-li">
+						<header>
+							<img src="../img/72x72.jpg" alt="">
+							<p>你好 ! 请 <span>登录</span> | <span>注册</span></p>
+						</header>
+						<footer>
+							<span>我的订单</span>
+							<span>优惠券</span>
+						</footer>
+					</div>
+				</li>
+				<li>
+					<div class="last-li">
+						我的关注
+					</div>
+				</li>
+			</ul>
+			<ul class="right-bottom">
+				<li>
+					<img src="../img/code.jpg" alt="">
+				</li>
+				<li>
+					<span>调查问卷</span>
+				</li>
+				<li>
+					<span>返回顶部</span>
+				</li>
+			</ul>
+			
+		</div>
+		<section>
+			<div class="location">
+				当前位置：首页  >  家局  >  健身户外  >  户外装备  >  探险者 3-4人全自动速开帐篷 四色可选 清明出游早准备·天蓝色
+			</div>
+			<div class="goodshow">
+				<!-- 放大镜 -->
+				<div class="goodshow-left">
+					<div class="img-box">
+						<span class="img-mark"></span>
+						<span class="img-float"></span>
+						<img src="../img/35149d4a046fc29b40ad150a235cb3b5.jpg!p450.jpg" >
+					</div>
+					<div class="bigImg-box">
+						<img src="../img/35149d4a046fc29b40ad150a235cb3b5.jpg!p450.jpg" >
+					</div>
+					<div class="smallbox">
+						<img src="../img/35149d4a046fc29b40ad150a235cb3b5.jpg!p450.jpg" alt="">
+						<img src="../img/35149d4a046fc29b40ad150a235cb3b5.jpg!p450.jpg" alt="">
+						<img src="../img/35149d4a046fc29b40ad150a235cb3b5.jpg!p450.jpg" alt="">
+						<img src="../img/35149d4a046fc29b40ad150a235cb3b5.jpg!p450.jpg" alt="">
+						<img src="../img/35149d4a046fc29b40ad150a235cb3b5.jpg!p450.jpg" alt="">
+					</div>
+					<img src="../img/59af2eefe2d492f48917fb665e238bb.png" >
+				</div>
+				<div class="goodshow-right">
+					<span class="word">探路者</span>
+					<p>探险者 3-4人全自动速开帐篷 四色可选 清明出游早</p>
+					<p>准备·天蓝色</p>
+					<span class="word">微微抖动 轻松开启</span>
+					<div class="now-price">
+						<span class="word">拼团价</span><em>¥169</em><span class="line"> ￥239</span> <i class="redw">2人团</i>
+						<p>优惠<i class="redw">2人团</i>还剩02天10时38分41秒，恢复平日价￥239.00</p>
+						<p><i class="redw">2人团</i>订单金额满168元包邮</p>
+					</div>
+					<p class="botword">商家直营 此商品由 <span>唯眠纺</span> 发货，并提供售后服务</p>
+					<img src="../img/pcdown.jpg" class="middle-img" >
+				</div>
+			</div>
+			<div class="middle-img">
+				<img src="../img/middleimg.jpg" >
+			</div>
+			<div class="goods-meg">
+				<div class="goods-meg-left">
+					<ul class="goods-meg-nav">
+						<li>商品详情</li>
+						<li>评论（6）</li>
+						<li>服务说明</li>
+						<span>数量1</span>
+					</ul>
+					<img src="../img/goodsxiangqing.jpg" alt="">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td>品牌</td>
+							<td>探路者</td>	
+						</tr>
+						<tr>
+							<td>商品名称</td>
+							<td>探险者 3-4人全自动速开帐篷 四色可选 清明出游早准备·天蓝色</td>	
+						</tr>
+						<tr>
+							<td>商品清单</td>
+							<td>帐篷收纳袋*1 防潮垫*1 帐篷*1 拉绳 地钉</td>	
+						</tr>
+						<tr>
+							<td>原产地</td>
+							<td>帐原产地</td>	
+						</tr>
+						<tr>
+							<td>规格参数</td>
+							<td>长*宽*高：210*200*135cm</td>	
+						</tr>
+						
+					</table>
+					<img src="../img/bigimg1.jpg" >
+					<img src="../img/bigimg2.jpg" >
+					<img src="../img/bigimg3.jpg" >
+					<img src="../img/bigimg4.jpg" >
+					<img src="../img/bigimg5.jpg" >
+					<img src="../img/bigimg6.jpg" >
+					<img src="../img/bigimg7.jpg" >
+					<img src="../img/bigimg8.jpg" >
+					<img src="../img/bigimg9.jpg" >
+					<img src="../img/bigimg10.jpg" >
+					<img src="../img/bigimg11.jpg" >
+					<img src="../img/bigimg12.jpg" >
+					<img src="../img/bigimg13.jpg" >
+					<img src="../img/bigimg14.jpg" >
+					<img src="../img/bigimg15.jpg" >
+					<img src="../img/bigimg16.jpg" >
+					<img src="../img/bigimg17.jpg" >
+					<img src="../img/pingjia.jpg" >
+					<ul class="evaluate">
+						<div class="evaluate-tit">
+							<input type="radio" name="eva"/ value="" id="a"><label for="a">全部评论(6)</label><input type="radio" name="eva" id="b"/><label for="b">好评(6)</label><input type="radio" name="eva" id="c"/><label for="c">中评</label><input type="radio" name="eva" id="d"/><label for="d">差评</label>
+							<span><input type="checkbox" name="" id="" value="" />有晒图</span>
+						</div>
+						<div class='none-mesg'>
+							该商品暂无评论
+						</div>
+						<li>
+							<div class="li-cont">
+								<p>物流给力</p>
+								<p>	2019-03-26 12:25:59</p>
+							</div>
+							<div class="star">
+								<span>135****8585</span>
+								<img src="../img/star.jpg" >
+							</div>
+						</li>
+						<li>
+							<div class="li-cont">
+								<p>物流给力</p>
+								<p>	2019-03-26 12:25:59</p>
+							</div>
+							<div class="star">
+								<span>135****8585</span>
+								<img src="../img/star.jpg" >
+							</div>
+						</li>
+						<li>
+							<div class="li-cont">
+								<p>物流给力</p>
+								<p>	2019-03-26 12:25:59</p>
+							</div>
+							<div class="star">
+								<span>135****8585</span>
+								<img src="../img/star.jpg" >
+							</div>
+						</li>
+						<li>
+							<div class="li-cont">
+								<p>物流给力</p>
+								<p>	2019-03-26 12:25:59</p>
+							</div>
+							<div class="star">
+								<span>135****8585</span>
+								<img src="../img/star.jpg" >
+							</div>
+						</li>
+						<li>
+							<div class="li-cont">
+								<p>物流给力</p>
+								<p>	2019-03-26 12:25:59</p>
+							</div>
+							<div class="star">
+								<span>135****8585</span>
+								<img src="../img/star.jpg" >
+							</div>
+						</li>
+						<li>
+							<div class="li-cont">
+								<p>物流给力</p>
+								<p>	2019-03-26 12:25:59</p>
+							</div>
+							<div class="star">
+								<span>135****8585</span>
+								<img src="../img/star.jpg" >
+							</div>
+						</li>
+					</ul>
+					<div class="page">
+						<span class="chan-page"><上一页</span>
+						<span class="page-num">1</span>
+						<span class="chan-page">下一页></span>
+					</div>
+					<img src="../img/26266924825d3eb9f86f01fdf5088dd.png" alt="" class="instr">
+					<img src="../img/bimg1.jpg" >
+					<img src="../img/bimg2.jpg" >
+					<img src="../img/bimg3.jpg" >
+					<p class="last-img"></p>
+					
+					
+				</div>
+				<div class="goods-meg-right">
+					<div class="title">
+						大家都在看
+					</div>
+					<ul>
+						<li>
+							<img src="../img/right.png" >
+							<p>Guy Laroche姬龙雪原装进口毛巾家庭装·绿多色·洗面巾*6*条·浴巾*2*条·手巾*7*条</p>
+							<span>
+								¥398
+							</span>
+						</li>
+						<li>
+							<img src="../img/right.png" >
+							<p>Guy Laroche姬龙雪原装进口毛巾家庭装·绿多色·洗面巾*6*条·浴巾*2*条·手巾*7*条</p>
+							<span>
+								¥398
+							</span>
+						</li>
+						<li>
+							<img src="../img/right.png" >
+							<p>Guy Laroche姬龙雪原装进口毛巾家庭装·绿多色·洗面巾*6*条·浴巾*2*条·手巾*7*条</p>
+							<span>
+								¥398
+							</span>
+						</li>
+						<li>
+							<img src="../img/right.png" >
+							<p>Guy Laroche姬龙雪原装进口毛巾家庭装·绿多色·洗面巾*6*条·浴巾*2*条·手巾*7*条</p>
+							<span>
+								¥398
+							</span>
+						</li>
+						<li>
+							<img src="../img/right.png" >
+							<p>Guy Laroche姬龙雪原装进口毛巾家庭装·绿多色·洗面巾*6*条·浴巾*2*条·手巾*7*条</p>
+							<span>
+								¥398
+							</span>
+						</li>
+						<li>
+							<img src="../img/right.png" >
+							<p>Guy Laroche姬龙雪原装进口毛巾家庭装·绿多色·洗面巾*6*条·浴巾*2*条·手巾*7*条</p>
+							<span>
+								¥398
+							</span>
+						</li>
+					</ul>
+						
+					
+				</div>
+				<div class="others">
+					<div class="tit">
+						<i></i>看看其他同类商品
+					</div>
+					<div class="list">
+						<div>
+							<img src="../img/botimg.jpg" alt="">
+							<p>探险者 3-4人全自动速开帐篷 四色可选 清明出游早准备·橘色"</p>
+							<span id="">
+								¥239
+							</span>
+						</div>
+						<div><img src="../img/botimg.jpg" alt="">
+							<p>探险者 3-4人全自动速开帐篷 四色可选 清明出游早准备·橘色"</p>
+							<span id="">
+								¥239
+							</span></div>
+						<div><img src="../img/botimg.jpg" alt="">
+							<p>探险者 3-4人全自动速开帐篷 四色可选 清明出游早准备·橘色"</p>
+							<span id="">
+								¥239
+							</span></div>
+						<div><img src="../img/botimg.jpg" alt="">
+							<p>探险者 3-4人全自动速开帐篷 四色可选 清明出游早准备·橘色"</p>
+							<span id="">
+								¥239
+							</span></div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		
+		<footer>
+			 <img src="../img/footer_ad.jpg" alt="">
+			 <div class="footer-list">
+				 <ul>
+				 	<li>
+						<span class="li-tit">新手上路</span>
+						<a href="">新用户注册</a>
+						<a href="">忘记密码</a>
+						<a href="">购物流程</a>
+						
+					</li>
+				 	<li>
+						<span class="li-tit">支付配送</span>
+						<a href="">货到付款</a>
+						<a href="">支付宝</a>
+						<a href="">配送方式h</a>
+					</li>
+				 	<li>
+						<span class="li-tit">会员服务</span>
+						<a href="">服务承诺</a>
+						<a href="">会员制度</a>
+						<a href="">积分介绍</a>
+						<a href="">退换货原则h</a>
+					</li>
+				 	<li>
+						<span class="li-tit">关于惠买</span>
+						<a href="">企业介绍</a>
+						<a href="">联系我们</a>
+						<a href="">招商专区</a>
+					</li>
+				 </ul>
+				 <div class="phonebuy">
+					 <img src="../img/foot_ewm.jpg" >
+					 <p>手机惠买<span>（优购物）</span></p>
+				 </div>
+				 <img src="../img/foot_dh.jpg" class="phone-num">
+			 </div>
+			 <div class="footer-nav">
+				 <p class="footer-nav-box">
+					 <a href="">首页</a><span>|</span>
+					 <a href="">关于惠买</a><span>|</span>
+					 <a href="">优购物</a><span>|</span>
+					 <a href="">联系我们</a><span>|</span>
+					 <a href="">招贤纳士</a><span>|</span>
+					 <a href="">招商专区</a><span>|</span>
+					 <a href="">供应商入口</a><span>|</span>
+					 <a href="">友情链接</a><span>|</span>
+					 <a href="">网站地图</a><span>|</span>
+					 <a href="">咨询中心</a><span>|</span>
+					 <a href="">评论</a><span>|</span>
+					 <a href="">图片</a>
+				 </p>
+				 <div class="footer-nav-link">
+				 	<p>友情链接：
+						<a href="">配眼镜</a>
+						<a href="">佐卡伊珠宝网</a>
+						<a href="">腕表名表</a>
+						<a href="">如何开网店</a>
+						<a href="">免费试用</a>
+						<a href="">钻戒网</a>
+					</p>
+					 <div class="footer-r-button">▼</div>
+						
+					 
+				 </div>
+				 <p>优品_惠买（优购物）全球优品特卖网站 专属于千万女性的优品特卖网站,优品_惠买（优购物）电视购物官方网站,100%正品保证 支持货到付款.</p>
+				 <p>Copyright©2007-2019 公司名称:北京惠买网络科技有限公司 统一社会信用代码:91110302339739621C  ICP备案号:京ICP备15039150号-1 食品经营许可证编号:JY11131010332635</p>
+				 <p>统一社会信用代码:91110302339739621C   ICP备案号:京ICP备15039150号-1   食品流通许可证编号:JY11131010332635 <a href=""> 营业执照</a>  <a href="">京网文(2017)10902-1271</a>  <a href="">增值业务经营许可证：京B2-20181380 </a></p>
+				<p class="beian"><img src="../img/bei.png" ><span>京公网安备 11030102010023号</span></p>
+			 </div>
+			 
+		</footer>
+	</body>
+</html>

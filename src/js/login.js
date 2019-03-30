@@ -213,6 +213,7 @@ $(function(){
 					}else{//获取cookie
 						let cookieStr = $.cookie('userlist') ? $.cookie('userlist') : "";
 						let cookieObj = convertCookieStrToCookieObj(cookieStr);
+						let userId = $phoneNum.val();
 						if(userId in cookieObj){//检查是否注册过
 							$phoneNum.parent().next().addClass('login-check-wrong').html('该手机已被注册请直接登录');	
 						}else{

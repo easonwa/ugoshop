@@ -248,10 +248,24 @@ nav{
 	@include size(100%,340px);
 	position:relative;
 	overflow:hidden;
-	img{
-		width: 1920px;
+	.banner-imgbox1{
 		height: 340px;
+		width: 1920px;
+		position: absolute;
+		left: -168px;
+		.banner-imgbox2{
+			width:5760px;
+			position:absolute;
+			left:0;
+			img{
+				float: left;
+				width: 1920px;
+				height: 340px;
+			}
+		}
+		
 	}
+	
 	.mark{
 		@include size(1000px,340px)
 		margin: 0 auto;
@@ -295,7 +309,11 @@ nav{
 			position: absolute;
 			bottom: 20px;
 			left: 50%;
-			opacity: 0.85;
+			opacity: 0.7;
+		}
+		span:last-child{
+			background: #ece5dd;
+			margin-left: 13px;
 		}
 	}
 }
@@ -845,7 +863,9 @@ section .live-tv{
 		display: flex;
 		justify-content: space-start;
 		flex-wrap:wrap;
-		
+		li:hover{
+			border: 1px solid red;
+		}
 		li{
 			@include size(318px,460px)
 			border: 1px solid #ddd;

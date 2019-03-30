@@ -224,12 +224,14 @@ $(function () {
             var cookieStr = $.cookie('userlist') ? $.cookie('userlist') : "";
             var cookieObj = convertCookieStrToCookieObj(cookieStr);
 
-            if (userId in cookieObj) {
+            var _userId = $phoneNum.val();
+
+            if (_userId in cookieObj) {
               //检查是否注册过
               $phoneNum.parent().next().addClass('login-check-wrong').html('该手机已被注册请直接登录');
             } else {
-              cookieObj[userId] = {
-                "userId": userId,
+              cookieObj[_userId] = {
+                "userId": _userId,
                 "password": $passWord.val()
               };
             }

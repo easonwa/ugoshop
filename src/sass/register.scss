@@ -4,7 +4,9 @@
 header{
 	height: 30px;
 }
-		
+body{
+	position: relative;
+}
 .login-box{
 	@include size(100%,604px);
 	font-family: "宋体";
@@ -169,12 +171,53 @@ header{
 				text-decoration: underline;
 			}
 		}
+		.register-point{
+			height: 37px;
+			width: 351px;
+			background: url(../../dist/img/welland.gif);
+			background-position: 0 -117px;
+			margin-top: 15px;
+			cursor: pointer;
+		}
+		.bottom-text{
+			width: 351px;
+			color: #888;
+			line-height: 22px;
+			margin-top: 25px;
+			p{
+				color: #666;
+				font-weight: bold;
+				line-height: 22px;
+			}
+		}
 	}
 	.login-main-right{
 		height: 434px;
 		width: 299px;
 		float: right;
 		background: #fff6ec;
+		box-sizing: border-box;
+		padding: 59px 0 0 80px;
+		font-size: 14px;
+		color: #555;
+		font-family: "微软雅黑";
+		a{
+			display: block;
+			width: 142px;
+			height: 32px;
+			line-height: 32px;
+			color: #ff6000;
+			text-align: center;
+			border-radius: 3px 3px 3px 3px;
+			border:1px solid #ff8501;
+			font-size: 12px;
+			font-family: '宋体';
+			background: #FFF;
+			margin:10px 0 40px 0 ;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
 	}
 }
 //右侧功能键
@@ -324,4 +367,31 @@ header{
 		background-position: -47px -276px;
 	}
 }
-//登录框
+//登录框遮罩
+.mask{
+	@include size(100%,100%);
+	background: rgba(2,2,2,0.5);
+	display: none;
+	position: absolute;
+	z-index: 5;
+	left: 0;
+	top :0;
+	img{
+		display: block;
+		margin: 15% 0;
+		margin-left: -220px;
+		position: fixed;
+		top: 0%;
+		left: 50%;
+		z-index: 110;
+	}
+	.close{
+		height: 13px;
+		width: 13px;
+		cursor: pointer;
+		position: fixed;
+		left: 1000px;
+		top :251px;
+		z-index: 111;
+	}
+}
